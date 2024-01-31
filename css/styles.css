@@ -6,7 +6,82 @@
     --whiteColor: #FFF;
     --blackColor: #000;
     --accentTextColor: rgba(255, 255, 255, 0.60);
+    --backgroundColor: #F5F4FA;
 }
+
+
+/* граюсь з svg */
+/* .svg__rect:hover .rect,
+.svg__circle:hover .circle {
+    stroke-dashoffset: 0;
+}
+
+.box1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    padding: 50px;
+}
+
+.svg {
+    width: 400px;
+    height: 300px;
+    border: 1px solid red;
+    margin-bottom: 30px;
+}
+
+.rect {
+    stroke: var(--accentColor);
+    stroke-width: 10px;
+    fill: none;
+    stroke-dasharray: 700px;
+    stroke-dashoffset: 700px;
+
+    transition: all 1s ease-in-out;
+}
+
+
+.circle{
+    stroke-dasharray: 314;
+    stroke-dashoffset: 314;
+
+    transition: all 1s ease-in-out;
+}
+
+
+.astronaut{
+    cursor: pointer;
+border: 1px solid red;
+}
+.astronaut:hover .astronaut__path{
+stroke-dashoffset: 0;
+}
+
+.astronaut__path{
+    
+    fill: none;
+    stroke: var(--accentColor);
+    stroke-width: 1px;
+
+        stroke-dasharray: 300;
+            stroke-dashoffset: 300;
+        
+            transition: all 1s ease-in-out;
+}
+
+.img1{
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38% );
+    width: 1200px;
+    width: 200px;
+    clip-path: url(#astronaut);
+
+} */
+
+
+
+
+
+
 
 body {
     color: var(--brandColor);
@@ -94,6 +169,16 @@ img {
     padding-bottom: 94px;
 }
 
+.link-current {
+    color: var(--accentColor);
+}
+
+.svg {
+    fill: rgba(117, 117, 117, 1);
+    
+}
+
+
 /* background: background-color background-image background-repeat background-position background-attachment */
 
 /* --------------------------------------HEADER START ----------------------------*/
@@ -161,9 +246,6 @@ img {
     color: var(--accentColor);
 }
 
-.link-current {
-    color: var(--accentColor);
-}
 
 .header__list {
     display: flex;
@@ -174,11 +256,12 @@ img {
 .header__item {}
  */
 .header__link {
-    color: var(--brandColor);
+    display: flex;
+    align-items: center;
 
+    color: var(--brandColor);
     font-weight: 500;
     letter-spacing: 0.28px;
-
     padding-top: 32px;
     padding-bottom: 32px;
 }
@@ -186,6 +269,16 @@ img {
 .header__link:hover,
 .header__link:focus {
     color: var(--accentColor);
+}
+
+.header__svg {
+    margin-right: 10px;
+
+}
+
+.header__link:hover .svg,
+.header__link:focus .svg {
+    fill: var(--accentColor);
 }
 
 .header__item:not(:last-child) {
@@ -261,8 +354,9 @@ img {
 
 /* -----------------------------FETURES START------------------------- */
 
-/* .features {} */
 
+
+/* .features {} */
 
 .features__list {
     display: flex;
@@ -283,6 +377,20 @@ img {
 .features__item:nth-last-child(-n + 4) {
     margin-bottom: 0;
 }
+
+
+.features__box {
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 4px;
+    background-color: var(--backgroundColor);
+}
+
 
 .features__title {
     color: var(--titleColor);
@@ -344,7 +452,7 @@ img {
 /* ---------------------------TEAM START---------------------------------*/
 
 .team {
-    background: #F5F4FA;
+    background: var(--backgroundColor);
 }
 
 .team__list {
@@ -399,7 +507,77 @@ img {
     margin-bottom: 30px;
 }
 
+.team__list--flex {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.team__item-retreat:not(:last-child) {
+    margin-right: 10px;
+}
+
+.team__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+
+    border-radius: 100%;
+
+}
+
+.team__link:hover,
+.team__link:focus {
+    background-color: var(--accentColor);
+}
+
+.team__link:hover .svg,
+.team__link:focus .svg {
+    fill: var(--whiteColor);
+}
+
 /* ----------------------------------TEAM END----------------------------- */
+
+
+/* ----------------------------------CUSTOMERS START------------------------------ */
+
+.customers__list {
+    display: flex;
+}
+
+.customers__item:not(:last-child){
+    margin-right: 30px;
+}
+
+
+.customers__link {
+    width: 170px;
+    height: 92px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 4px;
+        border: 1px solid #AFB1B8;
+}
+
+.customers__link:hover,
+.customers__link:focus{
+    border: 1px solid var(--accentColor);
+}
+
+.customers__link:hover .svg,
+.customers__link:focus .svg{
+    fill: var(--accentColor);
+}
+
+
+/* ----------------------------------CUSTOMERS END-------------------------------------*/
+
+
+
 
 
 /* ---------------------------------FOOTER START-------------------------------- */
@@ -408,6 +586,11 @@ img {
     background-color: #2F303A;
     padding-top: 60px;
     padding-bottom: 60px;
+}
+
+.footer__container{
+    display: flex;
+    align-items: baseline;
 }
 
 .footer__logo {
@@ -445,6 +628,52 @@ img {
 .footer__link-color {
     color: var(--whiteColor);
 }
+
+/* ----------------------------------NETWORKS START---------------------------------- */
+
+.footer__networks{
+    margin-left: 70px;
+}
+
+.footer__networks-title {
+    color:var(--whiteColor);
+        font-weight: 700;
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
+
+        display: inline-block;
+        margin-bottom: 20px;
+}
+
+.footer__networks--list {
+    display: flex;
+}
+
+.footer__networks--item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.footer__networks--link {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(255, 255, 255, 0.10);
+    border-radius: 100%;
+}
+.footer__networks--link:hover,
+.footer__networks--link:focus{
+    background-color: var(--accentColor);
+}
+
+.footer__networks--svg{
+    fill: var(--whiteColor);
+}
+
+/* ----------------------------------NETWORKS END------------------------------ */
+
 
 /*---------------------------------- FOOTER END ------------------------------------------------*/
 
