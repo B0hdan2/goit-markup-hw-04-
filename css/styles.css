@@ -175,7 +175,7 @@ img {
 
 .svg {
     fill: rgba(117, 117, 117, 1);
-    
+
 }
 
 
@@ -546,7 +546,7 @@ img {
     display: flex;
 }
 
-.customers__item:not(:last-child){
+.customers__item:not(:last-child) {
     margin-right: 30px;
 }
 
@@ -560,16 +560,16 @@ img {
     justify-content: center;
 
     border-radius: 4px;
-        border: 1px solid #AFB1B8;
+    border: 1px solid #AFB1B8;
 }
 
 .customers__link:hover,
-.customers__link:focus{
+.customers__link:focus {
     border: 1px solid var(--accentColor);
 }
 
 .customers__link:hover .svg,
-.customers__link:focus .svg{
+.customers__link:focus .svg {
     fill: var(--accentColor);
 }
 
@@ -588,7 +588,7 @@ img {
     padding-bottom: 60px;
 }
 
-.footer__container{
+.footer__container {
     display: flex;
     align-items: baseline;
 }
@@ -631,18 +631,18 @@ img {
 
 /* ----------------------------------NETWORKS START---------------------------------- */
 
-.footer__networks{
+.footer__networks {
     margin-left: 70px;
 }
 
 .footer__networks-title {
-    color:var(--whiteColor);
-        font-weight: 700;
-        letter-spacing: 0.42px;
-        text-transform: uppercase;
+    color: var(--whiteColor);
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
 
-        display: inline-block;
-        margin-bottom: 20px;
+    display: inline-block;
+    margin-bottom: 20px;
 }
 
 .footer__networks--list {
@@ -663,12 +663,13 @@ img {
     background-color: rgba(255, 255, 255, 0.10);
     border-radius: 100%;
 }
+
 .footer__networks--link:hover,
-.footer__networks--link:focus{
+.footer__networks--link:focus {
     background-color: var(--accentColor);
 }
 
-.footer__networks--svg{
+.footer__networks--svg {
     fill: var(--whiteColor);
 }
 
