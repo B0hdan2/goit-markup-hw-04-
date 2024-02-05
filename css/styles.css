@@ -11,7 +11,7 @@
 
 
 /* граюсь з svg */
-/* .svg__rect:hover .rect,
+ /* .svg__rect:hover .rect,
 .svg__circle:hover .circle {
     stroke-dashoffset: 0;
 }
@@ -75,7 +75,7 @@ stroke-dashoffset: 0;
     width: 200px;
     clip-path: url(#astronaut);
 
-} */
+}  */
 
 
 
@@ -544,6 +544,7 @@ img {
 
 .customers__list {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .customers__item:not(:last-child) {
